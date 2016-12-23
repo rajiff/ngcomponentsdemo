@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular.js 1.5 components demo</title>
+</head>
+
+<body ng-app='protoApp' ng-controller='protoAppCtrl' ng-cloak>
+    <message-list user='user' on-message='onUserMessage(message)'>
+    </message-list>
+    <div style='padding-top: 30px;'>
+        <label>User Messages</label>
+        <pre>{{ userMessages | json }}</pre>
+    </div>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="src/protoapp.js"></script>
+<script type="text/javascript" src="src/protoappctrl.js"></script>
+<script type="text/javascript" src="src/messagelistctrl.js"></script>
+<script type="text/javascript" src="src/messagelist.js"></script>
+
+</html>
